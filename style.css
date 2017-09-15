@@ -92,7 +92,6 @@ h1 {
 	font-size: 2.778em; /* 50.02px / 18px = 2.778 */
 	line-height: 1.319em; /* 66px / 50.02px = 1.319em ; 3 gridlines (22px) */
 	font-family: verdana;
-	border: 1px solid powderblue;
 	text-align: center;
 	margin: 10px 10px 0px 0px;
 	padding-bottom: 10px;
