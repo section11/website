@@ -2,6 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -28,7 +32,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+html {
 	line-height: 1;
 }
 ol, ul {
@@ -46,13 +50,58 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-p{
+
+/* End Reset CSS */
+/* Begin Site Styles */
+
+/* Using modular scale http://www.modularscale.com/?18&px&1.667 */
+
+html {
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+	font-size: 1.125em; /* 18 / 16 = 1.125 */
+	line-height: 1.222222em; /* 22 /19 = 1.222... aka 122% */
+  padding-top: 2.444444em; /* 44 / 18 */
+	padding-right: 1.222222em;
+	padding-left: 1.222222em;
+
+}
+body{
+	background: #39CCCC;
+}
+figure {
+	padding-bottom: 1.22222em;
+	text-align: center;
+}
+p {
+	text-indent: 1.222222em;
 	font-size: 160%;
 	font-family: courier;
 	border: 1px solid powderblue;
+	padding: 15px;
+
 }
-h1{
-	font-size: 250%;
+h1 + p {
+	text-indent: 0;
+}
+
+h1 {
+	font-size: 2.778em; /* 50.02px / 18px = 2.778 */
+	line-height: 1.319em; /* 66px / 50.02px = 1.319em ; 3 gridlines (22px) */
 	font-family: verdana;
 	border: 1px solid powderblue;
+	text-align: center;
+	margin: 10px 10px 0px 0px;
+	padding-bottom: 10px;
+
+}
+
+/* Responsive Images */
+img {
+	display: block;
+	max-width: 100%;
+	margin: auto;
 }
